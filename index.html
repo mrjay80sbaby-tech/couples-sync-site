@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sync</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="screen" id="room-screen">
+      <h1>Sync</h1>
+      <p>Enter your shared room code to continue, or create a new one.</p>
+      <input type="text" id="room-input" placeholder="Room code (e.g. jay-and-partner)">
+      <button id="join-btn">Join / Create Room</button>
+      <p id="room-error" class="error"></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
