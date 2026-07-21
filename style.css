@@ -24,7 +24,77 @@ input, button {
   font-size: 16px;
 }
 button {
-  background: #e94560;
+  background: #e94560;.tag {
+  display: inline-block;
+  background: #e9456022;
+  color: #e94560;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 12px;
+}
+
+button.secondary {
+  background: transparent;
+  border: 1px solid #444;
+  color: #ccc;
+  margin-top: 20px;
+}
+
+.answer-card {
+  background: #16213e;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.answer-card .label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  background: #16213e;
+  padding: 12px 0;
+  border-top: 1px solid #2a2a4a;
+}
+
+.bottom-nav a {
+  color: #888;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.bottom-nav a.active {
+  color: #e94560;
+  font-weight: bold;
+}
+
+#app {
+  padding-bottom: 70px;
+}
   color: white;
   font-weight: bold;
   cursor: pointer;
