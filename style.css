@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, sans-serif;
+  background: #1a1a2e;
+  color: #eee;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.screen {
+  max-width: 400px;
+  width: 100%;
+  padding: 24px;
+  text-align: center;
+}
+input, button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+button {
+  background: #e94560;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.error { color: #ff6b6b; font-size: 14px; }
