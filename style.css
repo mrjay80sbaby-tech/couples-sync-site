@@ -100,3 +100,20 @@ button.secondary {
   cursor: pointer;
 }
 .error { color: #ff6b6b; font-size: 14px; }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.media-card img, .media-card video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.media-card .caption {
+  font-size: 13px;
+  color: #ccc;
+  margin-top: 4px;
+}
