@@ -144,3 +144,11 @@ button.secondary {
 #intensity-slider {
   margin-bottom: 16px;
 }
+
+.ynm-btn {
+  flex: 1;
+  padding: 10px;
+  background: #2a2a4a;
+  color: #eee;
+  border-radius: 6px;
+}
