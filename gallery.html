@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Sync</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="screen" id="vault-lock-screen">
+      <h2>🔒 Enter Vault PIN</h2>
+      <input type="password" id="pin-input" inputmode="numeric" placeholder="PIN">
+      <button id="unlock-btn">Unlock</button>
+      <p id="vault-error" class="error"></p>
+      <p id="set-pin-note" style="font-size:13px;color:#888;"></p>
+    </div>
+
+    <div class="screen" id="gallery-content" style="display:none;">
+      <h2>Gallery</h2>
+      <input type="file" id="file-input" accept="image/*,video/*" style="display:none;">
+      <button id="upload-btn">+ Add Photo/Video</button>
+      <input type="text" id="caption-input" placeholder="Caption (optional)" style="display:none;">
+      <button id="confirm-upload-btn" style="display:none;">Upload</button>
+
+      <div id="media-grid" class="grid"></div>
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="today.html">Today</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="games.html">Games</a>
+      <a href="explore.html">Explore</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>
