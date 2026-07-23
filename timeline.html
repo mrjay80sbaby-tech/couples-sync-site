@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline - Sync</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="screen">
+      <h2>Timeline</h2>
+      <button id="add-btn">+ Add Memory</button>
+      <div id="timeline-list"></div>
+    </div>
+
+    <div id="add-modal" class="modal" style="display:none;">
+      <div class="modal-content">
+        <h3>Add a Memory</h3>
+        <input type="text" id="title-input" placeholder="Title (e.g. First trip together)">
+        <input type="date" id="date-input">
+        <textarea id="note-input" placeholder="Notes (optional)" rows="4"></textarea>
+        <button id="save-btn">Save</button>
+        <button id="cancel-btn" class="secondary">Cancel</button>
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="today.html">Today</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="games.html">Games</a>
+      <a href="explore.html">Explore</a>
+      <a href="timeline.html" class="active">Timeline</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="timeline.js"></script>
+</body>
+</html>
