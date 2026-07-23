@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games - Sync</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="screen">
+      <h2>Games</h2>
+
+      <label style="font-size:13px;color:#888;">Max intensity: <span id="intensity-label">3</span></label>
+      <input type="range" id="intensity-slider" min="1" max="5" value="3" style="width:100%;">
+
+      <button id="surprise-btn">🎲 Surprise Us</button>
+
+      <div id="games-list"></div>
+    </div>
+
+    <!-- Dice roller modal -->
+    <div id="dice-modal" class="modal" style="display:none;">
+      <div class="modal-content">
+        <h3 id="dice-result">Tap Roll to start</h3>
+        <button id="roll-btn">Roll</button>
+        <button id="close-dice-btn" class="secondary">Close</button>
+      </div>
+    </div>
+
+    <!-- Scenario card modal -->
+    <div id="scenario-modal" class="modal" style="display:none;">
+      <div class="modal-content">
+        <p id="scenario-text">Tap Draw for a scenario</p>
+        <button id="draw-btn">Draw</button>
+        <button id="close-scenario-btn" class="secondary">Close</button>
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="today.html">Today</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="games.html" class="active">Games</a>
+      <a href="explore.html">Explore</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="games.js"></script>
+</body>
+</html>
